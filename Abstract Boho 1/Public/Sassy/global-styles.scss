@@ -13,6 +13,7 @@ body{
   background-color: $backgroundColor !important;
   max-width: 100%;
   overflow-x: hidden;
+  color: white;
 }
 
 #page-grid{
@@ -21,3 +22,136 @@ body{
   grid-template-rows: 1fr;
   min-height: 100vh;
 }
+
+#index-diamond-container{
+  display: grid;
+  margin: auto;
+  background-color: $backgroundColor;
+}
+
+// Default Triangle Styles
+  .triangle {
+    --t:1px;  /* Thickness */
+    --c:#f1964f; /* Color */
+
+    display:inline-block;
+    border:var(--t) solid transparent;
+    border-bottom-color:var(--c);
+    background:
+      /* Left side */
+      linear-gradient(to bottom left,
+        transparent 49.5%,var(--c) 50% calc(50% + var(--t)),
+        transparent calc(50% + var(--t) + 1px)) right,
+
+      /* right side */
+      linear-gradient(to bottom right,
+        transparent 49.5%,var(--c) 50% calc(50% + var(--t)),
+        transparent calc(50% + var(--t) + 1px)) left;
+    background-size:50% 100%;
+    background-origin:border-box;
+    background-repeat:no-repeat;
+  }
+
+  .triangle:before {
+    content:"";
+    display:block;
+    padding-top:86.6%;
+  }
+// Default Triangle Styles
+
+// Top Half
+  #center-triangle-top{
+    grid-column: 1;
+    grid-row: 1;
+    height: 220px;
+    width: 300px;
+  }
+
+  #sun{
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    top: 55px;
+    height: 65px;
+    width: 65px;
+    background-color: $colorOrange;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  // Pyramids
+    #pyramid-1{
+      grid-column: 1;
+      grid-row: 1;
+      position: relative;
+      left: 62px;
+      height: 38px;
+      width: 52px;
+      margin-top: auto;
+    }
+    #pyramid-2{
+      grid-column: 1;
+      grid-row: 1;
+      height: 60px;
+      width: 80px;
+      margin: auto auto 0px auto;
+    }
+    // Overlay
+      #pyramid-2-overlay{
+        grid-column: 1;
+        grid-row: 1;
+        height: 57px;
+        width: 77px;
+        margin: auto auto 0px auto;
+        z-index: 1;
+        
+        --t:20px;  /* Thickness */
+        --c:#161b21; /* Color */
+
+        display:inline-block;
+        border:var(--t) solid transparent;
+        border-bottom-color:var(--c);
+        background:
+          /* Left side */
+          linear-gradient(to bottom left,
+            transparent 49.5%,var(--c) 50% calc(50% + var(--t)),
+            transparent calc(50% + var(--t) + 1px)) right,
+
+          /* right side */
+          linear-gradient(to bottom right,
+            transparent 49.5%,var(--c) 50% calc(50% + var(--t)),
+            transparent calc(50% + var(--t) + 1px)) left;
+        background-size:50% 100%;
+        background-origin:border-box;
+        background-repeat:no-repeat;
+      }
+        
+      #pyramid-2-overlay:before {
+        content:"";
+        display:block;
+        padding-top:86.6%;
+      }
+    // Overlay
+
+    #pyramid-3{
+      grid-column: 1;
+      grid-row: 1;
+      position: relative;
+      left: 186px;
+      height: 38px;
+      width: 52px;
+      margin-top: auto;
+    }
+  // Pyramids
+// Top Half
+
+
+// Bottom Half
+  #center-triangle-bottom{
+    grid-column: 1;
+    grid-row: 2;
+    height: 220px;
+    width: 300px;
+    transform: scaleY(-1);
+  }
+// Bottom Half
