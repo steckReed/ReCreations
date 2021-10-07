@@ -1,0 +1,23 @@
+@import './color-palette';
+
+*{ box-sizing: border-box; }
+
+html,
+body{
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $backgroundColor !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#page-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+}
