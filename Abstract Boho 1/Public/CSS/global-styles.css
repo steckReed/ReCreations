@@ -66,6 +66,11 @@ body {
   background-color: #f1964f;
   border-radius: 50%;
   margin: auto;
+  transition: 420ms;
+}
+
+#sun:hover {
+  transform: translateY(-25px);
 }
 
 #pyramid-1 {
@@ -84,9 +89,11 @@ body {
   height: 60px;
   width: 80px;
   margin: auto auto 0px auto;
+  z-index: 2;
+  overflow: hidden;
 }
 
-#pyramid-2-overlay {
+#pyramid-2-underlay {
   grid-column: 1;
   grid-row: 1;
   height: 57px;
@@ -110,6 +117,17 @@ body {
   content: "";
   display: block;
   padding-top: 86.6%;
+}
+
+#pyramid-2-line- {
+  grid-column: 1;
+  grid-row: 1;
+  height: 1px;
+  width: 32px;
+  background-color: #f1964f;
+  position: relative;
+  top: -18px;
+  left: 5px;
 }
 
 #pyramid-3 {
