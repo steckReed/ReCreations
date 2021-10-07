@@ -103,7 +103,54 @@ body{
       height: 75px;
       width: 75px;
       background-color: $colorOrange2;
+      overflow: hidden;
     }
+
+    // planet-5 rings/lines
+      #planet-5-line-1{
+        position: relative;
+        top: 15px;
+        height: 7px;
+        width: 75px;
+        background-color: $colorLightOrange;
+      }
+      #planet-5-line-2{
+        position: relative;
+        top: 18px;
+        height: 8px;
+        width: 75px;
+        background-color: $colorLightOrange;
+      }
+      #planet-5-line-3{
+        position: relative;
+        top: 30px;
+        height: 2px;
+        width: 75px;
+        background-color: $colorDarkOrange;
+      }
+      #planet-5-line-4{
+        position: relative;
+        top: 30px;
+        height: 6px;
+        width: 75px;
+        background-color: $colorLightOrange;
+      }
+      #planet-5-line-5{
+        position: relative;
+        top: 30px;
+        height: 6px;
+        width: 75px;
+        background-color: $colorDarkOrange;
+      }
+      #planet-5-line-6{
+        position: relative;
+        top: 37px;
+        height: 10px;
+        width: 75px;
+        background-color: $colorLightOrange;
+      }
+    // planet-5 rings/lines
+
     #planet-6{
       display: grid;
       height: 65px;
