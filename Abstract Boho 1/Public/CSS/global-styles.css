@@ -86,11 +86,15 @@ body {
 #pyramid-2 {
   grid-column: 1;
   grid-row: 1;
+  display: grid;
   height: 60px;
   width: 80px;
   margin: auto auto 0px auto;
   z-index: 2;
-  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, 1px);
+  column-gap: 2px;
+  row-gap: 6.4px;
 }
 
 #pyramid-2-underlay {
@@ -119,15 +123,40 @@ body {
   padding-top: 86.6%;
 }
 
-#pyramid-2-line- {
+.pyramid-2-line {
   grid-column: 1;
-  grid-row: 1;
   height: 1px;
-  width: 32px;
+  width: 38px;
   background-color: #f1964f;
-  position: relative;
-  top: -18px;
-  left: 5px;
+  margin-left: auto;
+}
+
+.pyramid-2-line:nth-child(1) {
+  width: 4px;
+}
+
+.pyramid-2-line:nth-child(2) {
+  width: 8px;
+}
+
+.pyramid-2-line:nth-child(3) {
+  width: 14px;
+}
+
+.pyramid-2-line:nth-child(4) {
+  width: 18px;
+}
+
+.pyramid-2-line:nth-child(5) {
+  width: 24px;
+}
+
+.pyramid-2-line:nth-child(6) {
+  width: 28px;
+}
+
+.pyramid-2-line:nth-child(7) {
+  width: 34px;
 }
 
 #pyramid-3 {
