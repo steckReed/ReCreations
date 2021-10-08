@@ -67,21 +67,23 @@ body{
     width: 300px;
   }
 
-  #sun{
-    grid-column: 1;
-    grid-row: 1;
-    position: relative;
-    top: 55px;
-    height: 65px;
-    width: 65px;
-    background-color: $colorOrange;
-    border-radius: 50%;
-    margin: auto;
-    transition: 420ms;
-  }
-  #sun:hover{
-    transform: translateY(-25px);
-  }
+  // Sun
+    #sun{
+      grid-column: 1;
+      grid-row: 1;
+      position: relative;
+      top: 55px;
+      height: 65px;
+      width: 65px;
+      background-color: $colorOrange;
+      border-radius: 50%;
+      margin: auto;
+      transition: 420ms;
+    }
+    #sun:hover{
+      transform: translateY(-25px);
+    }
+  // Sun
 
   // Pyramids
     #pyramid-1{
@@ -146,30 +148,22 @@ body{
         }
       // Underlay
 
-      .pyramid-2-line{
-        grid-column: 1;
-        height: 1px;
-        width: 38px;
-        background-color: #f1964f;
-        margin-left: auto;
-      }
-      
-      .pyramid-2-line:nth-child(1){width: 4px;}
-      .pyramid-2-line:nth-child(2){width: 8px;}
-      .pyramid-2-line:nth-child(3){width: 14px;}
-      .pyramid-2-line:nth-child(4){width: 18px;}
-      .pyramid-2-line:nth-child(5){width: 24px;}
-      .pyramid-2-line:nth-child(6){width: 28px;}
-      .pyramid-2-line:nth-child(7){width: 34px;}
-      
-
-      // #pyramid-2-line-1{
-      //   // position: relative;
-      //   // top: -18px;
-      //   // left: 5px;
-      // }
-
-
+      // Lines
+        .pyramid-2-line{
+          grid-column: 1;
+          height: 1px;
+          width: 38px;
+          background-color: #f1964f;
+          margin-left: auto;
+        }
+        .pyramid-2-line:nth-child(1){width: 4px;}
+        .pyramid-2-line:nth-child(2){width: 8px;}
+        .pyramid-2-line:nth-child(3){width: 14px;}
+        .pyramid-2-line:nth-child(4){width: 18px;}
+        .pyramid-2-line:nth-child(5){width: 24px;}
+        .pyramid-2-line:nth-child(6){width: 28px;}
+        .pyramid-2-line:nth-child(7){width: 34px;}
+      // Lines
     // Middle Pyramid
 
     #pyramid-3{
@@ -193,4 +187,76 @@ body{
     width: 300px;
     transform: scaleY(-1);
   }
+
+  // Planets
+    .planet-container{
+      grid-column: 1;
+      grid-row: 2;
+      display: grid;
+      position: relative;
+      height: min-content;
+      width: min-content;
+      column-gap: 6px;
+    }
+    #left-planets-container{
+      top: 144px;
+      left: 34px;
+    }
+
+    #right-planets-container{
+      top: 151px;
+      left: 216px;
+    }
+      
+    .planet{
+      grid-row: 1;
+      border-radius: 50%;
+      background-color: $colorOrange;
+      margin: auto;
+      transition: 350ms;
+    }
+    .planet:hover{ transform: scale(1.55); }
+
+    // Left
+      #planet-1{
+        height: 4px;
+        width: 4px;
+      }
+      #planet-2{
+        height: 8px;
+        width: 8px;
+        margin-right: 2px;
+      }
+      #planet-3{
+        display: grid;
+        height: 20px;
+        width: 20px;
+        border: 1px solid $colorOrange;
+        background-color: transparent;
+      }
+      #planet-3-line{
+        position: relative;
+        top: 2px;
+        right: 8px;
+        height: 1px;
+        width: 35px;
+        background-color: $colorOrange;
+        margin: auto;
+        transform: rotate(44deg);
+      }
+    // Left
+    
+    // Right
+      #planet-4{
+        height: 14px;
+        width: 14px;
+        background-color: transparent;
+        border: 1px solid $colorOrange;
+      }
+      #planet-5{
+        height: 14px;
+        width: 14px;
+      }
+    // Right
+  // Planets
 // Bottom Half

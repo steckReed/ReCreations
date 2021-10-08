@@ -176,4 +176,78 @@ body {
   width: 300px;
   transform: scaleY(-1);
 }
+
+.planet-container {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  position: relative;
+  height: min-content;
+  width: min-content;
+  column-gap: 6px;
+}
+
+#left-planets-container {
+  top: 144px;
+  left: 34px;
+}
+
+#right-planets-container {
+  top: 151px;
+  left: 216px;
+}
+
+.planet {
+  grid-row: 1;
+  border-radius: 50%;
+  background-color: #f1964f;
+  margin: auto;
+  transition: 350ms;
+}
+
+.planet:hover {
+  transform: scale(1.55);
+}
+
+#planet-1 {
+  height: 4px;
+  width: 4px;
+}
+
+#planet-2 {
+  height: 8px;
+  width: 8px;
+  margin-right: 2px;
+}
+
+#planet-3 {
+  display: grid;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #f1964f;
+  background-color: transparent;
+}
+
+#planet-3-line {
+  position: relative;
+  top: 2px;
+  right: 8px;
+  height: 1px;
+  width: 35px;
+  background-color: #f1964f;
+  margin: auto;
+  transform: rotate(44deg);
+}
+
+#planet-4 {
+  height: 14px;
+  width: 14px;
+  background-color: transparent;
+  border: 1px solid #f1964f;
+}
+
+#planet-5 {
+  height: 14px;
+  width: 14px;
+}
 /*# sourceMappingURL=global-styles.css.map */
