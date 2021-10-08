@@ -169,6 +169,34 @@ body {
   margin-top: auto;
 }
 
+.pyramid-shadow {
+  grid-row: 2;
+  transform: scaleY(-1);
+}
+
+#pyramid-1-shadow {
+  grid-column: 1;
+  position: relative;
+  left: 62px;
+  height: 38px;
+  width: 52px;
+}
+
+#pyramid-2-shadow {
+  grid-column: 1;
+  height: 60px;
+  width: 80px;
+  margin: 0px auto;
+}
+
+#pyramid-3-shadow {
+  grid-column: 1;
+  position: relative;
+  left: 186px;
+  height: 38px;
+  width: 52px;
+}
+
 #center-triangle-bottom {
   grid-column: 1;
   grid-row: 2;
@@ -193,7 +221,7 @@ body {
 }
 
 #right-planets-container {
-  top: 151px;
+  top: 148px;
   left: 216px;
 }
 
@@ -249,5 +277,6 @@ body {
 #planet-5 {
   height: 14px;
   width: 14px;
+  margin-left: 4px;
 }
 /*# sourceMappingURL=global-styles.css.map */
