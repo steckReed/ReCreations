@@ -49,6 +49,32 @@ body {
   padding-top: 86.6%;
 }
 
+.pyramid-shadow {
+  grid-column: 1;
+  grid-row: 1;
+  height: 57px;
+  width: 77px;
+  margin: auto auto 0px auto;
+  z-index: 1;
+  --t:22px;
+  /* Thickness */
+  --c:#161b21;
+  /* Color */
+  display: inline-block;
+  border: var(--t) solid transparent;
+  border-bottom-color: var(--c);
+  background: linear-gradient(to bottom left, transparent 49.5%, var(--c) 50% calc(50% + var(--t)), transparent calc(50% + var(--t) + 1px)) right, linear-gradient(to bottom right, transparent 49.5%, var(--c) 50% calc(50% + var(--t)), transparent calc(50% + var(--t) + 1px)) left;
+  background-size: 50% 100%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.pyramid-shadow:before {
+  content: "";
+  display: block;
+  padding-top: 86.6%;
+}
+
 #center-triangle-top {
   grid-column: 1;
   grid-row: 1;
@@ -66,7 +92,7 @@ body {
   background-color: #f1964f;
   border-radius: 50%;
   margin: auto;
-  transition: 420ms;
+  transition: 500ms;
 }
 
 #sun:hover {
@@ -97,36 +123,9 @@ body {
   row-gap: 6.4px;
 }
 
-#pyramid-2-underlay {
-  grid-column: 1;
-  grid-row: 1;
-  height: 57px;
-  width: 77px;
-  margin: auto auto 0px auto;
-  z-index: 1;
-  --t:20px;
-  /* Thickness */
-  --c:#161b21;
-  /* Color */
-  display: inline-block;
-  border: var(--t) solid transparent;
-  border-bottom-color: var(--c);
-  background: linear-gradient(to bottom left, transparent 49.5%, var(--c) 50% calc(50% + var(--t)), transparent calc(50% + var(--t) + 1px)) right, linear-gradient(to bottom right, transparent 49.5%, var(--c) 50% calc(50% + var(--t)), transparent calc(50% + var(--t) + 1px)) left;
-  background-size: 50% 100%;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-}
-
-#pyramid-2-overlay:before {
-  content: "";
-  display: block;
-  padding-top: 86.6%;
-}
-
 .pyramid-2-line {
   grid-column: 1;
   height: 1px;
-  width: 38px;
   background-color: #f1964f;
   margin-left: auto;
 }
@@ -169,32 +168,118 @@ body {
   margin-top: auto;
 }
 
-.pyramid-shadow {
-  grid-row: 2;
-  transform: scaleY(-1);
-}
-
 #pyramid-1-shadow {
   grid-column: 1;
+  grid-row: 2;
   position: relative;
   left: 62px;
   height: 38px;
   width: 52px;
+  margin: 1px auto;
+  transform: scaleY(-1);
 }
 
 #pyramid-2-shadow {
   grid-column: 1;
+  grid-row: 2;
   height: 60px;
   width: 80px;
-  margin: 0px auto;
+  margin: 1px auto;
+  transform: scaleY(-1);
 }
 
 #pyramid-3-shadow {
   grid-column: 1;
+  grid-row: 2;
   position: relative;
-  left: 186px;
-  height: 38px;
+  left: -62px;
+  height: 31px;
   width: 52px;
+  margin: 1px auto;
+  transform: scaleY(-1);
+}
+
+#center-triangle-bottom-line-container {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  position: relative;
+  left: -7px;
+  grid-template-columns: repeat(16, 10px);
+  column-gap: 6.5px;
+  margin: 0px auto;
+}
+
+.center-triangle-bottom-line {
+  grid-row: 1;
+  position: relative;
+  width: 1px;
+  background-color: #f1964f;
+  transform: rotate(34deg);
+}
+
+.center-triangle-bottom-line:nth-child(1) {
+  height: 16px;
+}
+
+.center-triangle-bottom-line:nth-child(2) {
+  height: 37px;
+  top: -2px;
+}
+
+.center-triangle-bottom-line:nth-child(3) {
+  height: 56px;
+  top: -5px;
+}
+
+.center-triangle-bottom-line:nth-child(4) {
+  height: 75px;
+  top: -6px;
+}
+
+.center-triangle-bottom-line:nth-child(5) {
+  height: 95px;
+  top: -8px;
+}
+
+.center-triangle-bottom-line:nth-child(6) {
+  height: 116px;
+  top: -10px;
+}
+
+.center-triangle-bottom-line:nth-child(7) {
+  height: 134px;
+  top: -12px;
+}
+
+.center-triangle-bottom-line:nth-child(8) {
+  height: 155px;
+  top: -14px;
+}
+
+.center-triangle-bottom-line:nth-child(9) {
+  height: 172px;
+  top: -14px;
+}
+
+.center-triangle-bottom-line:nth-child(10) {
+  height: 193px;
+  top: -16px;
+}
+
+.center-triangle-bottom-line:nth-child(11) {
+  height: 212px;
+  top: -19px;
+}
+
+.center-triangle-bottom-line:nth-child(12) {
+  height: 232px;
+  top: -19px;
+}
+
+.center-triangle-bottom-line:nth-child(13) {
+  height: 250px;
+  top: -22px;
 }
 
 #center-triangle-bottom {
