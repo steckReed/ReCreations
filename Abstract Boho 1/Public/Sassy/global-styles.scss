@@ -235,6 +235,7 @@ body{
       // margin-top: auto;
       transform: rotate(34deg);
     }
+
     .center-triangle-bottom-line:nth-child(1){ height: 16px; }
     .center-triangle-bottom-line:nth-child(2){ height: 37px; top: -2px; }
     .center-triangle-bottom-line:nth-child(3){ height: 56px; top: -5px; }
@@ -243,12 +244,13 @@ body{
     .center-triangle-bottom-line:nth-child(6){ height: 116px; top: -10px; }
     .center-triangle-bottom-line:nth-child(7){ height: 134px; top: -12px; }
     .center-triangle-bottom-line:nth-child(8){ height: 155px; top: -14px; }
-
     .center-triangle-bottom-line:nth-child(9){ height: 172px; top: -14px; }
     .center-triangle-bottom-line:nth-child(10){height: 193px; top: -16px; }
     .center-triangle-bottom-line:nth-child(11){height: 212px; top: -19px; }
     .center-triangle-bottom-line:nth-child(12){height: 232px; top: -19px; }
     .center-triangle-bottom-line:nth-child(13){height: 250px; top: -22px; }
+
+    // Should have these last 3...
     // .center-triangle-bottom-line:nth-child(14){height: 275px; top: 26px; }
     // .center-triangle-bottom-line:nth-child(15){height: 295px; top: 28px; }
     // .center-triangle-bottom-line:nth-child(16){height: 315px; top: 30px; }
@@ -261,6 +263,48 @@ body{
     width: 300px;
     transform: scaleY(-1);
   }
+
+  // Bottom Squiggles
+    #pyramid-shadow-bottom{
+      grid-column: 1;
+      grid-row: 2;
+      height: 64px;
+      width: 86px;
+      transform: scaleY(-1);
+      margin-bottom: 33px;
+    }
+
+    #bottom-squiggles-container{
+      grid-column: 1;
+      grid-row: 2;
+      display: grid;
+      position: relative;
+      top: 60px;
+      grid-template-columns: auto;
+      grid-template-rows: 12px 12px 12px;
+      height: 55px;
+      width: 72px;
+      margin: auto;
+      z-index: 1;
+      row-gap: 2px;
+    }
+    .bottom-squiggle{
+      height: 2px;
+      width: 9px;
+      background-color: $colorOrange;
+      margin: auto 0px;
+    }
+    .bottom-squiggle-up{ transform: rotate(-20deg); }
+    .bottom-squiggle-down{ transform: rotate(20deg); }
+
+    .bottom-squiggle-row-1{grid-row: 1;}
+    .bottom-squiggle-row-2{grid-row: 2;}
+    .bottom-squiggle-row-3{grid-row: 3;}
+
+    .empty-squiggle{
+      height: 0px !important;
+    }
+  // Bottom Squiggles
 
   // Planets
     .planet-container{
