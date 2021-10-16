@@ -12,7 +12,7 @@ body{
 body{
   background-color: $backgroundColor !important;
   max-width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   color: white;
 }
 
@@ -24,9 +24,12 @@ body{
 }
 
 #index-diamond-container{
+  grid-column: 1;
+  grid-row: 1;
   display: grid;
   margin: auto;
   background-color: $backgroundColor;
+  // opacity: 0.5;
 }
 
 // Default Triangle Styles
@@ -103,6 +106,83 @@ body{
     height: 220px;
     width: 300px;
   }
+
+  // Large Stars 
+    // Left & Right
+      .large-star{
+        grid-column: 1;
+        grid-row: 1;
+        position: relative;
+        top: 40px;
+        left: 78px;
+        height: 5px;
+        width: 5px;
+        background-color: $colorOrange;
+        border-radius: 50%;
+        filter: blur(1px);
+      }
+      .large-star:nth-child(2){left: 218px;}
+
+      .large-star-line{
+        position: relative;
+        height: 1px;
+        width: 12px;
+        background-color: $colorOrange;
+        top: 2px;
+        left: -3px;
+      }
+      .large-star-line:nth-child(2){rotate: 90deg;}
+    // Left & Right
+
+    // Middle
+      #large-star-middle{
+        grid-column: 1;
+        grid-row: 1;
+        display: grid;
+        position: relative;
+        top: 33px;
+        left: 150px;
+        height: min-content;
+        width: min-content;
+        filter: blur(1px);
+      }
+      // Side Lines
+        .large-star-middle-line-side{
+          grid-column: 1;
+          grid-row: 1;
+          position: relative;
+          top: 8px;
+          left: -8px;
+          height: 1px;
+          width: 4px;
+          background-color: $colorOrange;
+        }
+        .large-star-middle-line-side:nth-child(1){left: 5px;}
+      // Side Lines
+
+      // Cross
+        .large-star-middle-line{
+          grid-column: 1;
+          grid-row: 1;
+          position: relative;
+          top: 8px;
+          left: -5px;
+          height: 1px;
+          width: 11px;
+          rotate: 45deg;
+          background-color: $colorOrange;
+        }
+        
+        .large-star-middle-line:nth-child(2){rotate: -45deg}
+      // Cross
+
+      #large-star-middle-line-center{
+        height: 17px;
+        width: 1px;
+        background-color: $colorOrange;
+      }
+    // Middle
+  // Large Stars
 
   // Sun
     #sun{
