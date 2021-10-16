@@ -12,7 +12,7 @@ body{
 body{
   background-color: $backgroundColor !important;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #page-grid{
@@ -21,6 +21,32 @@ body{
   grid-template-rows: 1fr;
   min-height: 100vh;
 }
+
+// Source Image & Toggle Button
+  #source-image-container{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 688px;
+    margin: auto;
+  }
+  #sourceImage{
+    height: 925px;
+    display: none;
+    user-select: none;
+  }
+
+  #toggle-btn{
+    grid-column: 1;
+    grid-row: 1;
+    width: min-content;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+// Source Image & Toggle Button
 
 // Planets
   #index-planets-container{

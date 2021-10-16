@@ -6,7 +6,13 @@
       <meta charset='UTF-8'>
       <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <!-- Meta Tags -->
-  
+
+  <!-- Include jQuery & Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- Include jQuery & Bootstrap5 -->
+
   <link rel="stylesheet" href="./Public/CSS/global-styles.css">
 
   <title>Minimalistic Planets Wallpaper</title>
@@ -14,39 +20,53 @@
 
 <body>
   <div id='page-grid'>
-    <div id='index-planets-container'>
-      <!-- Left Side -->
-        <div id='planets-container-left'>
-          <div id='planet-1' class='planet'></div>
-          <div id='planet-2' class='planet'></div>
-          <div id='planet-3' class='planet'></div>
-          <div id='planet-4' class='planet'></div>
-        </div>
-      <!-- Left Side -->
+    <!-- Original Source Image -->
+      <div id='source-image-container'>
+        <image draggable="false" id='sourceImage' src='./Minimalistic-Planets-Wallpaper.jpg'></image>
+      </div>
+    <!-- Original Source Image -->
 
-      <!-- Right Side -->
-        <div id='planets-container-right'>
-          <div id='planet-5' class='planet'>
-            <div id='planet-5-line-1'></div>
-            <div id='planet-5-line-2'></div>
-            <div id='planet-5-line-3'></div>
-            <div id='planet-5-line-4'></div>
-            <div id='planet-5-line-5'></div>
-            <div id='planet-5-line-6'></div>
+    <!-- Recreation -->
+      <div id='index-planets-container'>
+        <!-- Left Side -->
+          <div id='planets-container-left'>
+            <div id='planet-1' class='planet'></div>
+            <div id='planet-2' class='planet'></div>
+            <div id='planet-3' class='planet'></div>
+            <div id='planet-4' class='planet'></div>
           </div>
-          
-          <div id='planet-6' class='planet'>
-            <div class='planet-line'></div>
-          </div>
+        <!-- Left Side -->
 
-          <div id='planet-7' class='planet'>
-            <div class='planet-line'></div>
-          </div>
+        <!-- Right Side -->
+          <div id='planets-container-right'>
+            <div id='planet-5' class='planet'>
+              <div id='planet-5-line-1'></div>
+              <div id='planet-5-line-2'></div>
+              <div id='planet-5-line-3'></div>
+              <div id='planet-5-line-4'></div>
+              <div id='planet-5-line-5'></div>
+              <div id='planet-5-line-6'></div>
+            </div>
+            
+            <div id='planet-6' class='planet'>
+              <div class='planet-line'></div>
+            </div>
 
-          <div id='planet-8' class='planet'></div>
-        </div>
-      <!-- Right Side -->
-    </div>
+            <div id='planet-7' class='planet'>
+              <div class='planet-line'></div>
+            </div>
+
+            <div id='planet-8' class='planet'></div>
+          </div>
+        <!-- Right Side -->
+      </div>
+    <!-- Recreation -->
+
+    <!-- Toggle -->
+      <button id='toggle-btn' class='btn btn-primary'>Toggle</button>
+    <!-- Toggle -->
   </div>
   
+  <!-- Toggle Script -->
+  <script src='./Public/JS/toggle.js'></script>
 </body>
