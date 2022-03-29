@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d6e7d4 !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#page-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  min-height: 100vh;
+}
+
+#cassette-tape-contianer {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -ms-grid;
+  display: grid;
+  height: 250px;
+  width: 400px;
+  background-color: #413c40;
+  border-radius: 6px;
+  padding: 5px;
+  margin: auto;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#cassette-tape-background-container {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  height: 85%;
+  width: 100%;
+  border-radius: 4px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+#cassette-tape-background-top {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 87px;
+  border-radius: 8px 8px 0px 0px;
+  background-color: #dcdcdc;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+#cassette-tape-background-top-letter {
+  position: relative;
+  left: 12px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: #413c40;
+  margin: 0px;
+}
+
+#cassette-tape-background-top-title {
+  position: relative;
+  left: 12px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+  font-family: 'Gochi Hand', cursive;
+  margin: 0px;
+}
+
+.cassette-tape-background-top-lines {
+  position: relative;
+  display: block;
+  width: 76%;
+  border-top: 1px solid #6e626e;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.cassette-tape-background-top-lines:nth-child(2) {
+  top: -25px;
+}
+
+.cassette-tape-background-top-lines:nth-child(3) {
+  top: -15px;
+}
+
+.cassette-tape-background-top-lines:nth-child(4) {
+  top: -5px;
+}
+
+.cassette-tape-background-top-lines:nth-child(5) {
+  top: 5px;
+}
+
+#cassette-tape-background-bottom {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  height: 87px;
+  background-color: #d49524;
+}
+
+#cassette-tape-background-top-text-left {
+  position: relative;
+  top: 62px;
+  left: 12px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  color: #413c40;
+  margin: 0px;
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#cassette-tape-background-top-text-right {
+  position: relative;
+  top: -8px;
+  right: -279px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  color: #413c40;
+  margin: 0px;
+  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#cassette-tape-center-container {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  grid-row: 1/-1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr min-content;
+      grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
+      grid-template-columns: min-content 1fr min-content;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  height: 70px;
+  width: 225px;
+  padding: 5px;
+  background-color: #413c40;
+  border-radius: 6px;
+  margin: auto;
+  margin-top: 65px;
+}
+
+#cassette-tape-center-clear {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 35px;
+  width: 100%;
+  background-color: #6e626e;
+  margin: auto;
+}
+
+.cassette-tape-center-spinner {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%;
+  margin: auto;
+}

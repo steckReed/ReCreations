@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAA;EAAE,UAAU,EAAE,UAAU;CAAI;;AAE7B,AAAA,IAAI;AACJ,IAAI,CAAA;EACF,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,KAAK;EACjB,eAAe,EAAE,MAAM;CACxB;;AAED,AAAA,IAAI,CAAA;EACF,gBAAgB,ECZA,OAAO,CDYY,UAAU;EAC7C,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;CACnB;;AAED,AAAA,UAAU,CAAA;EACR,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,GAAG;EAC1B,kBAAkB,EAAE,GAAG;EACvB,UAAU,EAAE,KAAK;CAClB",
+    "sources": [
+        "../Sassy/global-styles.scss",
+        "../Sassy/_color-palette.scss"
+    ],
+    "names": [],
+    "file": "global-styles.css"
+}

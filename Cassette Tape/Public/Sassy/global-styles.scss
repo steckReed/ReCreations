@@ -1,0 +1,169 @@
+@import './color-palette';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+*{ 
+  box-sizing: border-box; 
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body{
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $backgroundColor !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#page-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+}
+
+// Cassette Tape
+  #cassette-tape-contianer{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    height: 250px;
+    width: 400px;
+    background-color: $colorGray;
+    border-radius: 6px;
+    padding: 5px;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  // Background
+    #cassette-tape-background-container{
+      grid-column: 1;
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 85%;
+      width: 100%;
+      border-radius: 4px;
+      padding: 15px;
+      margin: auto;
+      margin-top: 0px;
+    }
+
+    // Top
+      #cassette-tape-background-top{
+        grid-column: 1;
+        grid-row: 1;
+        height: 87px;
+        border-radius: 8px 8px 0px 0px;
+        background-color: $colorWhite;
+        transition: 400ms;
+      }
+      // #cassette-tape-background-top:hover{
+      //   height: 300px;
+      // }
+      #cassette-tape-background-top-letter{
+        position: relative;
+        left: 12px;
+        width: min-content;
+        color: $colorGray;
+        margin: 0px;
+      }
+      #cassette-tape-background-top-title{
+        position: relative;
+        left: 12px;
+        width: min-content;
+        white-space: nowrap;
+        transform: rotate(-12deg);
+        font-family: 'Gochi Hand', cursive;
+        margin: 0px;
+      }
+      .cassette-tape-background-top-lines{
+        position: relative;
+        display: block;
+        width: 76%;
+        border-top: 1px solid $colorLightGray;
+        margin-left: auto;
+        margin-right: 20px;
+      }
+      .cassette-tape-background-top-lines:nth-child(2){ top: -25px; }
+      .cassette-tape-background-top-lines:nth-child(3){ top: -15px; }
+      .cassette-tape-background-top-lines:nth-child(4){ top: -5px; }
+      .cassette-tape-background-top-lines:nth-child(5){ top: 5px; }
+    // Top
+    
+    // Bottom
+      #cassette-tape-background-bottom{
+        grid-column: 1;
+        grid-row: 2;
+        height: 87px;
+        background-color: $colorOrange;
+      }
+      #cassette-tape-background-top-text-left{
+        position: relative;
+        top: 62px;
+        left: 12px;
+        width: min-content;
+        white-space: nowrap;
+        color: $colorGray;
+        margin: 0px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+      }
+      #cassette-tape-background-top-text-right{
+        position: relative;
+        top: -8px;
+        right: -279px;
+        transform: rotate(90deg);
+        width: min-content;
+        white-space: nowrap;
+        color: $colorGray;
+        margin: 0px;
+        font-size: 20px;
+        font-family: 'Noto Sans', sans-serif;
+      }
+    // Bottom
+  // Background
+
+  // Center
+    #cassette-tape-center-container{
+      grid-column: 1;
+      grid-row: 1/-1;
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      grid-template-rows: auto;
+      column-gap: 5px;
+      height: 70px;
+      width: 225px;
+      padding: 5px;
+      background-color: $colorGray;
+      border-radius: 6px;
+      margin: auto;
+      margin-top: 65px;
+    }
+    #cassette-tape-center-clear{
+      // grid-column: 2;
+      grid-row: 1;
+      height: 35px;
+      width: 100%;
+      background-color: $colorLightGray;
+      margin: auto;
+    }
+    .cassette-tape-center-spinner{
+      grid-row: 1;
+      height: 50px;
+      width: 50px;
+      background-color: transparent;
+      border: 1px solid $colorWhite;
+      border-radius: 50%;
+      margin: auto;
+    }
+  // Center
+// Cassette Tape
