@@ -1,0 +1,125 @@
+@import './color-palette';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+*{ 
+  box-sizing: border-box; 
+  font-family: 'Roboto Slab', serif;
+}
+
+html,
+body{
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $backgroundColor !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#page-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+}
+
+// Text (Adventure & Niagara Falls)
+  // Containers
+    #anf-container{
+      grid-column: 1;
+      grid-row: 1;
+      background-color: transparent;
+      padding: 0px;
+      margin: auto;
+    }
+
+    #anf-top-text-container,
+    #anf-bottom-text-container{
+      display: flex;
+      text-transform: uppercase;
+      text-align: center;
+      height: 75px;
+      color: $colorBlack;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    #anf-top-text-container{ font-size: 1.5rem;}
+    #anf-bottom-text-container{ font-size: 1rem; margin-top: -45px;}
+
+    #anf-top-text-container span,
+    #anf-bottom-text-container span{ 
+      position: relative;
+      display: block; 
+    }
+  // Containers
+
+  // Top Letters (Adventure)
+    #anf-top-text-a{  top: 50px; left: 20px; transform: rotate(-90deg); }
+    #anf-top-text-d{  top: 22px; left: 2px; transform: rotate(-70deg); }
+    #anf-top-text-v{  top: -2px; left: -10px; transform: rotate(-42deg); }
+    #anf-top-text-e1{ top: -16px; left: -6px; transform: rotate(-10deg); }
+    #anf-top-text-n{  top: -18px; left: -2px; transform: rotate(0deg); }
+    #anf-top-text-t{  top: -16px; left: 4px; transform: rotate(10deg); }
+    #anf-top-text-u{  top: -2px; left: 8px; transform: rotate(42deg); }
+    #anf-top-text-r{  top: 20px; left: -2px; transform: rotate(70deg); }
+    #anf-top-text-e2{ top: 50px; left: -20px; transform: rotate(90deg); }
+  // Top Letters
+
+  // Bottom Letters (Niagara Falls)
+    #anf-bottom-text-n{  top: -50px; left: 18px; transform: rotate(90deg); }
+    #anf-bottom-text-i{  top: -34px; left: 6px; transform: rotate(70deg); }
+    #anf-bottom-text-a1{ top: -20px; left: 0px; transform: rotate(42deg); }
+    #anf-bottom-text-g{  top: -8px; left: -4px; transform: rotate(18deg); }
+    #anf-bottom-text-a2{ top: -2px; left: -4px; transform: rotate(10deg); }
+    #anf-bottom-text-r{  top: 0px; left: -6px; transform: rotate(0deg); }
+    #anf-bottom-text-a3{ top: 0px; left: -8px; transform: rotate(0deg); }
+    
+    #anf-bottom-text-f{  top: -2px; left: 0px; transform: rotate(-10deg); }
+    #anf-bottom-text-a4{ top: -8px; left: 0px; transform: rotate(-18deg); }
+    #anf-bottom-text-l1{ top: -20px; left: 0px; transform: rotate(-42deg); }
+    #anf-bottom-text-l2{ top: -34px; left: -6px; transform: rotate(-70deg); }
+    #anf-bottom-text-s{  top: -50px; left: -18px; transform: rotate(-90deg); }
+  // Bottom Letters
+// Text
+
+
+
+#bubble{
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  height: 225px;
+  width: 150px;
+  margin: auto;
+  margin-top: -45px;
+  border-radius: 40%;
+  // background-color: red; 
+}
+
+#anf-container-left-line,
+#anf-container-right-line{
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  height: 80px;
+  width: 2px;
+  background-color: $colorBlack;
+}
+
+
+#anf-container-left-line{ 
+  top: 0px;
+  left: 2px;
+  margin: auto;
+  margin-left: 0px;
+}
+#anf-container-right-line{ 
+  top: 0px;
+  margin: auto;
+  margin-right: 0px;
+}
