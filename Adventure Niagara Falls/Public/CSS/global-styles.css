@@ -218,7 +218,7 @@ body {
           transform: rotate(-90deg);
 }
 
-#bubble {
+#anf-center-container {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -229,7 +229,6 @@ body {
   width: 150px;
   margin: auto;
   margin-top: -45px;
-  border-radius: 40%;
 }
 
 #anf-container-left-line,
@@ -238,21 +237,29 @@ body {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
+  display: block;
   position: relative;
+  top: 36px;
   height: 80px;
   width: 2px;
   background-color: #0c0e24;
+  margin: auto;
 }
 
 #anf-container-left-line {
-  top: 0px;
   left: 2px;
-  margin: auto;
   margin-left: 0px;
 }
 
 #anf-container-right-line {
-  top: 0px;
-  margin: auto;
   margin-right: 0px;
+}
+
+#anf-center-divide-line {
+  position: relative;
+  height: 1px;
+  width: 110px;
+  background-color: #0c0e24;
+  margin: auto;
+  margin-top: -30px;
 }

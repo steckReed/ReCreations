@@ -26,16 +26,16 @@ body{
   min-height: 100vh;
 }
 
+#anf-container{
+  grid-column: 1;
+  grid-row: 1;
+  background-color: transparent;
+  padding: 0px;
+  margin: auto;
+}
+
 // Text (Adventure & Niagara Falls)
   // Containers
-    #anf-container{
-      grid-column: 1;
-      grid-row: 1;
-      background-color: transparent;
-      padding: 0px;
-      margin: auto;
-    }
-
     #anf-top-text-container,
     #anf-bottom-text-container{
       display: flex;
@@ -88,38 +88,46 @@ body{
 // Text
 
 
+// Outer Container Lines
+  #anf-center-container{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    height: 225px;
+    width: 150px;
+    margin: auto;
+    margin-top: -45px;
+  }
 
-#bubble{
-  grid-column: 1;
-  grid-row: 1;
-  display: grid;
-  height: 225px;
-  width: 150px;
-  margin: auto;
-  margin-top: -45px;
-  border-radius: 40%;
-  // background-color: red; 
-}
+  #anf-container-left-line,
+  #anf-container-right-line{
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    position: relative;
+    top: 36px;
+    height: 80px;
+    width: 2px;
+    background-color: $colorBlack;
+    margin: auto;
+  }
 
-#anf-container-left-line,
-#anf-container-right-line{
-  grid-column: 1;
-  grid-row: 1;
+
+  #anf-container-left-line{ 
+    left: 2px;
+    margin-left: 0px;
+  }
+  #anf-container-right-line{ 
+    margin-right: 0px;
+  }
+// Outer Container Lines
+
+
+#anf-center-divide-line{
   position: relative;
-  height: 80px;
-  width: 2px;
+  height: 1px;
+  width: 110px;
   background-color: $colorBlack;
-}
-
-
-#anf-container-left-line{ 
-  top: 0px;
-  left: 2px;
   margin: auto;
-  margin-left: 0px;
-}
-#anf-container-right-line{ 
-  top: 0px;
-  margin: auto;
-  margin-right: 0px;
+  margin-top: -30px;
 }
