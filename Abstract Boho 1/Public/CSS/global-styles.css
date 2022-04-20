@@ -24,6 +24,7 @@ body {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 #index-diamond-container {
