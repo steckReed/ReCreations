@@ -93,6 +93,7 @@ body{
     grid-column: 1;
     grid-row: 1;
     display: grid;
+    grid-template-rows: 1fr;
     height: 225px;
     width: 150px;
     margin: auto;
@@ -105,7 +106,7 @@ body{
     grid-row: 1;
     display: block;
     position: relative;
-    top: 36px;
+    // top: 36px;
     height: 80px;
     width: 2px;
     background-color: $colorBlack;
@@ -130,7 +131,7 @@ body{
       position: relative;
       display: grid;
       column-gap: 8px;
-      height: 100%;
+      height: min-content;
       margin: auto;
     }
     .anf-sun-ray{
@@ -160,11 +161,12 @@ body{
     #anf-tree-container{
       grid-column: 1;
       grid-row: 1;
-      position: relative;
       display: grid;
+      position: relative;
+      top: -6px;
       column-gap: 15px;
       margin: auto;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
     }
     .anf-tree{
       grid-row: 1;
@@ -202,11 +204,59 @@ body{
   // Treeline
  
   #anf-center-divide-line{
+    grid-column: 1;
+    grid-row: 1;
     position: relative;
+    top: 12px;
     height: 1px;
-    width: 110px;
+    width: 110px; 
     background-color: $colorBlack;
     margin: auto;
-    margin-top: -30px;
+    // margin-top: -30px;
   }
+
+  // Waterfall
+    #anf-waterfall-container{
+      grid-column: 1;
+      grid-row: 1;
+      position: relative;
+      display: grid;
+      height: min-content;
+      margin: auto;
+      margin-bottom: 22px;
+    }
+
+
+    #anf-waterfall-bottom-left{
+      --c: 1px;
+      grid-column: 1;
+      grid-row: 1;
+      position: relative;
+      right: 1px;
+      top: 6px;
+      height: 112px;
+      width: 98px;
+      border: solid var(--c) transparent;
+      border-bottom-color: black;
+      border-radius: 48%;
+      background-origin: border-box;
+      transform: rotate(42deg);
+    }
+    #anf-waterfall-bottom-right{  
+      --c: 1px;
+      grid-column: 1;
+      grid-row: 1;
+      position: relative;
+      right: -29px;
+      top: 69px;
+      height: 1px;
+      width: 77px;
+      border: solid var(--c) transparent;
+      border-bottom-color: black;
+      border-radius: 50%;
+      background-origin: border-box;
+      padding-top: 42%;
+      transform: rotate(-25deg);
+    }
+  // Waterfall
 // Center Imagery

@@ -225,6 +225,8 @@ body {
   grid-row: 1;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   height: 225px;
   width: 150px;
   margin: auto;
@@ -239,7 +241,6 @@ body {
   grid-row: 1;
   display: block;
   position: relative;
-  top: 36px;
   height: 80px;
   width: 2px;
   background-color: #0c0e24;
@@ -265,7 +266,9 @@ body {
   display: grid;
   -webkit-column-gap: 8px;
           column-gap: 8px;
-  height: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   margin: auto;
 }
 
@@ -372,13 +375,13 @@ body {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  position: relative;
   display: -ms-grid;
   display: grid;
+  position: relative;
+  top: -6px;
   -webkit-column-gap: 15px;
           column-gap: 15px;
   margin: auto;
-  margin-bottom: 30px;
 }
 
 .anf-tree {
@@ -453,10 +456,68 @@ body {
 }
 
 #anf-center-divide-line {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
   position: relative;
+  top: 12px;
   height: 1px;
   width: 110px;
   background-color: #0c0e24;
   margin: auto;
-  margin-top: -30px;
+}
+
+#anf-waterfall-container {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: auto;
+  margin-bottom: 22px;
+}
+
+#anf-waterfall-bottom-left {
+  --c: 1px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: relative;
+  right: 1px;
+  top: 6px;
+  height: 112px;
+  width: 98px;
+  border: solid var(--c) transparent;
+  border-bottom-color: black;
+  border-radius: 48%;
+  background-origin: border-box;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+}
+
+#anf-waterfall-bottom-right {
+  --c: 1px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: relative;
+  right: -29px;
+  top: 69px;
+  height: 1px;
+  width: 77px;
+  border: solid var(--c) transparent;
+  border-bottom-color: black;
+  border-radius: 50%;
+  background-origin: border-box;
+  padding-top: 42%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
 }
