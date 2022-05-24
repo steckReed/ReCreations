@@ -255,6 +255,118 @@ body {
   margin-right: 0px;
 }
 
+#anf-sun-rays-container {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  height: 100%;
+  margin: auto;
+}
+
+.anf-sun-ray {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: relative;
+  bottom: 60px;
+  height: 68px;
+  width: 1px;
+  background-color: black;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.anf-sun-ray:nth-child(1) {
+  height: 12px;
+  bottom: 55px;
+  left: -2px;
+  -webkit-transform: rotate(-75deg);
+          transform: rotate(-75deg);
+}
+
+.anf-sun-ray:nth-child(2) {
+  height: 24px;
+  bottom: 63px;
+  left: -9px;
+  -webkit-transform: rotate(-52deg);
+          transform: rotate(-52deg);
+}
+
+.anf-sun-ray:nth-child(3) {
+  height: 58px;
+  bottom: 57px;
+  left: -11px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.anf-sun-ray:nth-child(4) {
+  height: 76px;
+  bottom: 60px;
+  left: -11px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.anf-sun-ray:nth-child(5) {
+  height: 80px;
+  bottom: 65px;
+  left: -6px;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.anf-sun-ray:nth-child(6) {
+  height: 81px;
+  bottom: 67px;
+  left: -0px;
+}
+
+.anf-sun-ray:nth-child(7) {
+  height: 78px;
+  bottom: 68px;
+  left: 5px;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+
+.anf-sun-ray:nth-child(8) {
+  height: 68px;
+  bottom: 69px;
+  left: 11px;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+
+.anf-sun-ray:nth-child(9) {
+  height: 58px;
+  bottom: 60px;
+  left: 12px;
+  -webkit-transform: rotate(24deg);
+          transform: rotate(24deg);
+}
+
+.anf-sun-ray:nth-child(10) {
+  height: 31px;
+  bottom: 60px;
+  left: 9px;
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
+}
+
+.anf-sun-ray:nth-child(11) {
+  height: 10px;
+  bottom: 59px;
+  left: 5px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
 #anf-tree-container {
   -ms-grid-column: 1;
   grid-column: 1;
