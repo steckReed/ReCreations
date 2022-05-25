@@ -462,7 +462,7 @@ body {
   grid-row: 1;
   position: relative;
   top: 12px;
-  height: 1px;
+  height: 2px;
   width: 110px;
   background-color: #0c0e24;
   margin: auto;
@@ -481,6 +481,99 @@ body {
   height: min-content;
   margin: auto;
   margin-bottom: 22px;
+}
+
+.anf-waterfall-line {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: relative;
+  height: 2px;
+  width: 7px;
+  background-color: black;
+  margin: auto;
+}
+
+.anf-waterfall-curve {
+  --c: 2px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: relative;
+  height: 14px;
+  width: 14px;
+  border: solid var(--c) transparent;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-radius: 48%;
+  background-origin: border-box;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  margin: auto;
+}
+
+#anf-waterfall-line-3 {
+  margin-right: 0px;
+  bottom: 18px;
+  right: 4px;
+  width: 16px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#anf-waterfall-line-1 {
+  margin-right: 0px;
+  bottom: 18px;
+  left: 6px;
+  width: 36px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#anf-waterfall-line-2 {
+  margin-right: 0px;
+  bottom: 19px;
+  left: 7px;
+  width: 36px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#anf-waterfall-curve-1 {
+  margin-right: 0px;
+  bottom: 20px;
+  left: 8px;
+  height: 7px;
+  width: 6px;
+}
+
+#anf-waterfall-curve-2 {
+  margin-right: 0px;
+  bottom: 14px;
+  right: 26px;
+  height: 6px;
+  width: 8px;
+  -webkit-transform: rotate(132deg);
+          transform: rotate(132deg);
+  border-left-color: #e8e8e8;
+}
+
+#anf-waterfall-curve-3 {
+  margin-right: 0px;
+  bottom: 10px;
+  right: 30px;
+  height: 10px;
+  width: 10px;
+  -webkit-transform: rotate(132deg);
+          transform: rotate(132deg);
 }
 
 #anf-waterfall-bottom-left {
