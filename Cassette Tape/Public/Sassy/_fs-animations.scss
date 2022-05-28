@@ -1,0 +1,14 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cassette-tape-spinner-rotate{
+  animation-delay: 0s; 
+  animation: rotate 3.6s both;
+  animation-iteration-count: infinite;
+}

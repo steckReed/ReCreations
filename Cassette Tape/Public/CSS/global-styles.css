@@ -1,6 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.cassette-tape-spinner-rotate {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation: rotate 3.6s both;
+          animation: rotate 3.6s both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
